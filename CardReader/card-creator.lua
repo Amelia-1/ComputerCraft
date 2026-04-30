@@ -1,6 +1,6 @@
 local manipulator = peripheral.find("magnetic_card_manipulator")
 
-local function CreateCard(sec_level)
+local function create_card(sec_level)
     
     if manipulator.hasCard() then
         if sec_level == "5" then
@@ -19,5 +19,5 @@ while true do
     term.clear()
     write("Level: ")
     local input = read()
-    CreateCard(input)
+    create_card(input)
 end
